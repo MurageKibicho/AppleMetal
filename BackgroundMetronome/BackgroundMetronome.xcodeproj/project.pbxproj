@@ -1,0 +1,880 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B376E2724F662300096D971 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B376E2624F662300096D971 /* AppDelegate.swift */; };
+		0B376E2924F662300096D971 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B376E2824F662300096D971 /* SceneDelegate.swift */; };
+		0B376E2B24F662300096D971 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B376E2A24F662300096D971 /* ViewController.swift */; };
+		0B376E2E24F662300096D971 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B376E2C24F662300096D971 /* Main.storyboard */; };
+		0B376E3024F662360096D971 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B376E2F24F662360096D971 /* Assets.xcassets */; };
+		0B376E3324F662360096D971 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B376E3124F662360096D971 /* LaunchScreen.storyboard */; };
+		0B376E3E24F662360096D971 /* BackgroundMetronomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B376E3D24F662360096D971 /* BackgroundMetronomeTests.swift */; };
+		0B376E4924F662370096D971 /* BackgroundMetronomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B376E4824F662370096D971 /* BackgroundMetronomeUITests.swift */; };
+		0B376E4E24F662370096D971 /* BackgroundMetronome WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0B376E4D24F662370096D971 /* BackgroundMetronome WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0B376E5424F662370096D971 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B376E5224F662370096D971 /* Interface.storyboard */; };
+		0B376E5624F662390096D971 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B376E5524F662390096D971 /* Assets.xcassets */; };
+		0B376E5D24F662390096D971 /* BackgroundMetronome WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0B376E5C24F662390096D971 /* BackgroundMetronome WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0B376E6224F662390096D971 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B376E6124F662390096D971 /* InterfaceController.swift */; };
+		0B376E6424F662390096D971 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B376E6324F662390096D971 /* ExtensionDelegate.swift */; };
+		0B376E6624F662390096D971 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B376E6524F662390096D971 /* NotificationController.swift */; };
+		0B376E6824F6623C0096D971 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B376E6724F6623C0096D971 /* Assets.xcassets */; };
+		0B376E7F24F675B00096D971 /* CustomRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B376E7E24F675B00096D971 /* CustomRoundButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B376E3A24F662360096D971 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B376E1B24F662300096D971 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B376E2224F662300096D971;
+			remoteInfo = BackgroundMetronome;
+		};
+		0B376E4524F662370096D971 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B376E1B24F662300096D971 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B376E2224F662300096D971;
+			remoteInfo = BackgroundMetronome;
+		};
+		0B376E4F24F662370096D971 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B376E1B24F662300096D971 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B376E4C24F662370096D971;
+			remoteInfo = "BackgroundMetronome WatchKit App";
+		};
+		0B376E5E24F662390096D971 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B376E1B24F662300096D971 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B376E5B24F662390096D971;
+			remoteInfo = "BackgroundMetronome WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0B376E7024F6623C0096D971 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0B376E5D24F662390096D971 /* BackgroundMetronome WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B376E7424F6623C0096D971 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0B376E4E24F662370096D971 /* BackgroundMetronome WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0B376E2324F662300096D971 /* BackgroundMetronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackgroundMetronome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B376E2624F662300096D971 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B376E2824F662300096D971 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0B376E2A24F662300096D971 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B376E2D24F662300096D971 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0B376E2F24F662360096D971 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B376E3224F662360096D971 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0B376E3424F662360096D971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B376E3924F662360096D971 /* BackgroundMetronomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackgroundMetronomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B376E3D24F662360096D971 /* BackgroundMetronomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMetronomeTests.swift; sourceTree = "<group>"; };
+		0B376E3F24F662360096D971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B376E4424F662370096D971 /* BackgroundMetronomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackgroundMetronomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B376E4824F662370096D971 /* BackgroundMetronomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMetronomeUITests.swift; sourceTree = "<group>"; };
+		0B376E4A24F662370096D971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B376E4D24F662370096D971 /* BackgroundMetronome WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BackgroundMetronome WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B376E5324F662370096D971 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		0B376E5524F662390096D971 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B376E5724F662390096D971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B376E5C24F662390096D971 /* BackgroundMetronome WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BackgroundMetronome WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B376E6124F662390096D971 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		0B376E6324F662390096D971 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		0B376E6524F662390096D971 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		0B376E6724F6623C0096D971 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B376E6924F6623C0096D971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B376E6A24F6623C0096D971 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		0B376E7E24F675B00096D971 /* CustomRoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRoundButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B376E2024F662300096D971 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B376E3624F662360096D971 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B376E4124F662370096D971 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B376E5924F662390096D971 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B376E1A24F662300096D971 = {
+			isa = PBXGroup;
+			children = (
+				0B376E2524F662300096D971 /* BackgroundMetronome */,
+				0B376E3C24F662360096D971 /* BackgroundMetronomeTests */,
+				0B376E4724F662370096D971 /* BackgroundMetronomeUITests */,
+				0B376E5124F662370096D971 /* BackgroundMetronome WatchKit App */,
+				0B376E6024F662390096D971 /* BackgroundMetronome WatchKit Extension */,
+				0B376E2424F662300096D971 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0B376E2424F662300096D971 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B376E2324F662300096D971 /* BackgroundMetronome.app */,
+				0B376E3924F662360096D971 /* BackgroundMetronomeTests.xctest */,
+				0B376E4424F662370096D971 /* BackgroundMetronomeUITests.xctest */,
+				0B376E4D24F662370096D971 /* BackgroundMetronome WatchKit App.app */,
+				0B376E5C24F662390096D971 /* BackgroundMetronome WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B376E2524F662300096D971 /* BackgroundMetronome */ = {
+			isa = PBXGroup;
+			children = (
+				0B376E2624F662300096D971 /* AppDelegate.swift */,
+				0B376E2824F662300096D971 /* SceneDelegate.swift */,
+				0B376E2A24F662300096D971 /* ViewController.swift */,
+				0B376E2C24F662300096D971 /* Main.storyboard */,
+				0B376E2F24F662360096D971 /* Assets.xcassets */,
+				0B376E3124F662360096D971 /* LaunchScreen.storyboard */,
+				0B376E3424F662360096D971 /* Info.plist */,
+			);
+			path = BackgroundMetronome;
+			sourceTree = "<group>";
+		};
+		0B376E3C24F662360096D971 /* BackgroundMetronomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B376E3D24F662360096D971 /* BackgroundMetronomeTests.swift */,
+				0B376E3F24F662360096D971 /* Info.plist */,
+			);
+			path = BackgroundMetronomeTests;
+			sourceTree = "<group>";
+		};
+		0B376E4724F662370096D971 /* BackgroundMetronomeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0B376E4824F662370096D971 /* BackgroundMetronomeUITests.swift */,
+				0B376E4A24F662370096D971 /* Info.plist */,
+			);
+			path = BackgroundMetronomeUITests;
+			sourceTree = "<group>";
+		};
+		0B376E5124F662370096D971 /* BackgroundMetronome WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				0B376E5224F662370096D971 /* Interface.storyboard */,
+				0B376E5524F662390096D971 /* Assets.xcassets */,
+				0B376E5724F662390096D971 /* Info.plist */,
+				0B376E7E24F675B00096D971 /* CustomRoundButton.swift */,
+			);
+			path = "BackgroundMetronome WatchKit App";
+			sourceTree = "<group>";
+		};
+		0B376E6024F662390096D971 /* BackgroundMetronome WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0B376E6124F662390096D971 /* InterfaceController.swift */,
+				0B376E6324F662390096D971 /* ExtensionDelegate.swift */,
+				0B376E6524F662390096D971 /* NotificationController.swift */,
+				0B376E6724F6623C0096D971 /* Assets.xcassets */,
+				0B376E6924F6623C0096D971 /* Info.plist */,
+				0B376E6A24F6623C0096D971 /* PushNotificationPayload.apns */,
+			);
+			path = "BackgroundMetronome WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B376E2224F662300096D971 /* BackgroundMetronome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B376E7524F6623C0096D971 /* Build configuration list for PBXNativeTarget "BackgroundMetronome" */;
+			buildPhases = (
+				0B376E1F24F662300096D971 /* Sources */,
+				0B376E2024F662300096D971 /* Frameworks */,
+				0B376E2124F662300096D971 /* Resources */,
+				0B376E7424F6623C0096D971 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B376E5024F662370096D971 /* PBXTargetDependency */,
+			);
+			name = BackgroundMetronome;
+			productName = BackgroundMetronome;
+			productReference = 0B376E2324F662300096D971 /* BackgroundMetronome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0B376E3824F662360096D971 /* BackgroundMetronomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B376E7824F6623C0096D971 /* Build configuration list for PBXNativeTarget "BackgroundMetronomeTests" */;
+			buildPhases = (
+				0B376E3524F662360096D971 /* Sources */,
+				0B376E3624F662360096D971 /* Frameworks */,
+				0B376E3724F662360096D971 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B376E3B24F662360096D971 /* PBXTargetDependency */,
+			);
+			name = BackgroundMetronomeTests;
+			productName = BackgroundMetronomeTests;
+			productReference = 0B376E3924F662360096D971 /* BackgroundMetronomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0B376E4324F662370096D971 /* BackgroundMetronomeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B376E7B24F6623C0096D971 /* Build configuration list for PBXNativeTarget "BackgroundMetronomeUITests" */;
+			buildPhases = (
+				0B376E4024F662370096D971 /* Sources */,
+				0B376E4124F662370096D971 /* Frameworks */,
+				0B376E4224F662370096D971 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B376E4624F662370096D971 /* PBXTargetDependency */,
+			);
+			name = BackgroundMetronomeUITests;
+			productName = BackgroundMetronomeUITests;
+			productReference = 0B376E4424F662370096D971 /* BackgroundMetronomeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		0B376E4C24F662370096D971 /* BackgroundMetronome WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B376E7124F6623C0096D971 /* Build configuration list for PBXNativeTarget "BackgroundMetronome WatchKit App" */;
+			buildPhases = (
+				0B376E4B24F662370096D971 /* Resources */,
+				0B376E7024F6623C0096D971 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B376E5F24F662390096D971 /* PBXTargetDependency */,
+			);
+			name = "BackgroundMetronome WatchKit App";
+			productName = "BackgroundMetronome WatchKit App";
+			productReference = 0B376E4D24F662370096D971 /* BackgroundMetronome WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		0B376E5B24F662390096D971 /* BackgroundMetronome WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B376E6D24F6623C0096D971 /* Build configuration list for PBXNativeTarget "BackgroundMetronome WatchKit Extension" */;
+			buildPhases = (
+				0B376E5824F662390096D971 /* Sources */,
+				0B376E5924F662390096D971 /* Frameworks */,
+				0B376E5A24F662390096D971 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BackgroundMetronome WatchKit Extension";
+			productName = "BackgroundMetronome WatchKit Extension";
+			productReference = 0B376E5C24F662390096D971 /* BackgroundMetronome WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B376E1B24F662300096D971 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Murage Kibicho";
+				TargetAttributes = {
+					0B376E2224F662300096D971 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					0B376E3824F662360096D971 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 0B376E2224F662300096D971;
+					};
+					0B376E4324F662370096D971 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 0B376E2224F662300096D971;
+					};
+					0B376E4C24F662370096D971 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					0B376E5B24F662390096D971 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 0B376E1E24F662300096D971 /* Build configuration list for PBXProject "BackgroundMetronome" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0B376E1A24F662300096D971;
+			productRefGroup = 0B376E2424F662300096D971 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B376E2224F662300096D971 /* BackgroundMetronome */,
+				0B376E3824F662360096D971 /* BackgroundMetronomeTests */,
+				0B376E4324F662370096D971 /* BackgroundMetronomeUITests */,
+				0B376E4C24F662370096D971 /* BackgroundMetronome WatchKit App */,
+				0B376E5B24F662390096D971 /* BackgroundMetronome WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B376E2124F662300096D971 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B376E3324F662360096D971 /* LaunchScreen.storyboard in Resources */,
+				0B376E3024F662360096D971 /* Assets.xcassets in Resources */,
+				0B376E2E24F662300096D971 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B376E3724F662360096D971 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B376E4224F662370096D971 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B376E4B24F662370096D971 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B376E5624F662390096D971 /* Assets.xcassets in Resources */,
+				0B376E5424F662370096D971 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B376E5A24F662390096D971 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B376E6824F6623C0096D971 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B376E1F24F662300096D971 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B376E2B24F662300096D971 /* ViewController.swift in Sources */,
+				0B376E7F24F675B00096D971 /* CustomRoundButton.swift in Sources */,
+				0B376E2724F662300096D971 /* AppDelegate.swift in Sources */,
+				0B376E2924F662300096D971 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B376E3524F662360096D971 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B376E3E24F662360096D971 /* BackgroundMetronomeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B376E4024F662370096D971 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B376E4924F662370096D971 /* BackgroundMetronomeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B376E5824F662390096D971 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B376E6624F662390096D971 /* NotificationController.swift in Sources */,
+				0B376E6424F662390096D971 /* ExtensionDelegate.swift in Sources */,
+				0B376E6224F662390096D971 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B376E3B24F662360096D971 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B376E2224F662300096D971 /* BackgroundMetronome */;
+			targetProxy = 0B376E3A24F662360096D971 /* PBXContainerItemProxy */;
+		};
+		0B376E4624F662370096D971 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B376E2224F662300096D971 /* BackgroundMetronome */;
+			targetProxy = 0B376E4524F662370096D971 /* PBXContainerItemProxy */;
+		};
+		0B376E5024F662370096D971 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B376E4C24F662370096D971 /* BackgroundMetronome WatchKit App */;
+			targetProxy = 0B376E4F24F662370096D971 /* PBXContainerItemProxy */;
+		};
+		0B376E5F24F662390096D971 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B376E5B24F662390096D971 /* BackgroundMetronome WatchKit Extension */;
+			targetProxy = 0B376E5E24F662390096D971 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0B376E2C24F662300096D971 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B376E2D24F662300096D971 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0B376E3124F662360096D971 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B376E3224F662360096D971 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0B376E5224F662370096D971 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B376E5324F662370096D971 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0B376E6B24F6623C0096D971 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0B376E6C24F6623C0096D971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B376E6E24F6623C0096D971 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82L4ZCWYB7;
+				INFOPLIST_FILE = "BackgroundMetronome WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.murage.BackgroundMetronome.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		0B376E6F24F6623C0096D971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82L4ZCWYB7;
+				INFOPLIST_FILE = "BackgroundMetronome WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.murage.BackgroundMetronome.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		0B376E7224F6623C0096D971 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82L4ZCWYB7;
+				IBSC_MODULE = BackgroundMetronome_WatchKit_Extension;
+				INFOPLIST_FILE = "BackgroundMetronome WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.murage.BackgroundMetronome.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		0B376E7324F6623C0096D971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82L4ZCWYB7;
+				IBSC_MODULE = BackgroundMetronome_WatchKit_Extension;
+				INFOPLIST_FILE = "BackgroundMetronome WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.murage.BackgroundMetronome.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		0B376E7624F6623C0096D971 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82L4ZCWYB7;
+				INFOPLIST_FILE = BackgroundMetronome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.murage.BackgroundMetronome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0B376E7724F6623C0096D971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82L4ZCWYB7;
+				INFOPLIST_FILE = BackgroundMetronome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.murage.BackgroundMetronome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0B376E7924F6623C0096D971 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82L4ZCWYB7;
+				INFOPLIST_FILE = BackgroundMetronomeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.murage.BackgroundMetronomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BackgroundMetronome.app/BackgroundMetronome";
+			};
+			name = Debug;
+		};
+		0B376E7A24F6623C0096D971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82L4ZCWYB7;
+				INFOPLIST_FILE = BackgroundMetronomeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.murage.BackgroundMetronomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BackgroundMetronome.app/BackgroundMetronome";
+			};
+			name = Release;
+		};
+		0B376E7C24F6623C0096D971 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82L4ZCWYB7;
+				INFOPLIST_FILE = BackgroundMetronomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.murage.BackgroundMetronomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BackgroundMetronome;
+			};
+			name = Debug;
+		};
+		0B376E7D24F6623C0096D971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82L4ZCWYB7;
+				INFOPLIST_FILE = BackgroundMetronomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.murage.BackgroundMetronomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BackgroundMetronome;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B376E1E24F662300096D971 /* Build configuration list for PBXProject "BackgroundMetronome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B376E6B24F6623C0096D971 /* Debug */,
+				0B376E6C24F6623C0096D971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B376E6D24F6623C0096D971 /* Build configuration list for PBXNativeTarget "BackgroundMetronome WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B376E6E24F6623C0096D971 /* Debug */,
+				0B376E6F24F6623C0096D971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B376E7124F6623C0096D971 /* Build configuration list for PBXNativeTarget "BackgroundMetronome WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B376E7224F6623C0096D971 /* Debug */,
+				0B376E7324F6623C0096D971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B376E7524F6623C0096D971 /* Build configuration list for PBXNativeTarget "BackgroundMetronome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B376E7624F6623C0096D971 /* Debug */,
+				0B376E7724F6623C0096D971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B376E7824F6623C0096D971 /* Build configuration list for PBXNativeTarget "BackgroundMetronomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B376E7924F6623C0096D971 /* Debug */,
+				0B376E7A24F6623C0096D971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B376E7B24F6623C0096D971 /* Build configuration list for PBXNativeTarget "BackgroundMetronomeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B376E7C24F6623C0096D971 /* Debug */,
+				0B376E7D24F6623C0096D971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B376E1B24F662300096D971 /* Project object */;
+}
